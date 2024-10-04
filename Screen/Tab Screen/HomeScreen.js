@@ -86,7 +86,7 @@ export default function HomeScreen() {
       <View style={styles.headerContainer} >
         <View >
           <Text style={styles.greating}>Hi,</Text>
-          <Text style={styles.greatingName}></Text>
+          <Text style={styles.greatingName}>🤗</Text>
         </View>
         
         <View style={styles.ImagemageC}>
