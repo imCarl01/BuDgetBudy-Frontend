@@ -22,6 +22,7 @@ const ForgotPasswordScreen = () => {
       } else {
         Alert.alert('Error', response.data.message);
       }
+      
     } catch (error) {
       if (error.response) {
         Alert.alert('Error', error.response.data.message);

@@ -8,6 +8,8 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import Toast from 'react-native-toast-message';
 
 
+
+
 export default function LoginScreen() {
     const [email, setEmail] = useState('');
     const [emaiiVerify, setEmailVerify] = useState(false)
@@ -25,7 +27,7 @@ export default function LoginScreen() {
         password: password,
       }
       if(email&&password){
-        axios.post("http://192.168.223.145:3000/login-user",userData)
+        axios.post(`https://budgetbuddy1-j5q67ysm.b4a.run/login-user`,userData)
         .then(res=>{console.log(res.data)
           if(res.data.status=="ok"){
             AsyncStorage.setItem("token", res.data.data)

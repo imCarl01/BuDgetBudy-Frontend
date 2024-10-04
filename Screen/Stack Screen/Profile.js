@@ -69,10 +69,10 @@ export default function Profile() {
                         <Text style={styles.label}>Phone</Text>
                         <Text style={styles.infoText}>{userdata.mobile || <ActivityIndicator/>}</Text>
                     </View>
-                    <View style={styles.infoRow}>
+                    {/* <View style={styles.infoRow}>
                         <Text style={styles.label}>Gender</Text>
                         <Text style={styles.infoText}>Male</Text>
-                    </View>
+                    </View> */}
                 </View>
 
                 <View style={styles.signoutContainer}>

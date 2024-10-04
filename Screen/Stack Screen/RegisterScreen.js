@@ -29,7 +29,7 @@ export default function LoginScreen() {
         password: password,
       }
       if(nameVerify&&emaiiVerify&&mobileVerify&&passwordVerify){
-        axios.post("http://192.168.223.145:3000/register", userData)
+        axios.post("https://budgetbuddy1-j5q67ysm.b4a.run/register", userData)
         .then(res=>{console.log(res.data)
           if(res.data.status=="ok"){
             Toast.show({
